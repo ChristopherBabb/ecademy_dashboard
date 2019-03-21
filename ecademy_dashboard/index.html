@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134490074-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134490074-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="ecademyblue.png" size="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="ecademyblue.png"/>
+
+    <title>Ecademy Dashboard</title>
+
+
+    <!-- open graph -->
+    <meta property="og:title" content="Ecademy Dashboard">
+    <meta property="og:site_name" content="Ecademy Dashboard">
+    <meta property="og:url" content="http://christopherbabb.com/grundfoscoursestatus/#">
+    <meta property="og:description" content="Ecademy Dashboard, Ecademy">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" width="1200px" height="1200px" content="opengraph.png">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="fonts/GrundfosTheSansV2OT-3L.otf" rel="font">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+                <img class="logo" src="logo1.svg" alt="Grundfos Logo" >
+                <h5 id="dashboard">Ecademy Dashboard</h5>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link" id="v-pills-australia-tab" data-toggle="pill" href="#v-pills-australia" role="tab" aria-controls="v-pills-australia" aria-selected="false">Australia </a>
+                      <h5 id="aus_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-austria-tab" data-toggle="pill" href="#v-pills-austria" role="tab" aria-controls="v-pills-austria" aria-selected="false">Austria</a>
+                      <h5 id="austria_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-belgium_dutch-tab" data-toggle="pill" href="#v-pills-belgium_dutch" role="tab" aria-controls="v-pills-belgium_dutch" aria-selected="false">Belgium (Dutch)</a>
+                      <h5 id="belg_dutch_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-belgium_french-tab" data-toggle="pill" href="#v-pills-belgium_french" role="tab" aria-controls="v-pills-belgium_french" aria-selected="false">Belgium (French)</a>
+                      <h5 id="belg_french_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-china-tab" data-toggle="pill" href="#v-pills-china" role="tab" aria-controls="v-pills-china" aria-selected="false">China</a>
+                      <h5 id="china_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-czech-tab" data-toggle="pill" href="#v-pills-czech" role="tab" aria-controls="v-pills-czech" aria-selected="false">Czech</a>
+                      <h5 id="czech_num" class="side_number"></h5>
+                  <a class="nav-link active" id="v-pills-denmark-tab" data-toggle="pill" href="#v-pills-denmark" role="tab" aria-controls="v-pills-denmark" aria-selected="true">Denmark</a>
+                      <h5 id="den_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-egypt-tab" data-toggle="pill" href="#v-pills-egypt" role="tab" aria-controls="v-pills-egypt" aria-selected="true">Egypt</a>
+                      <h5 id="egypt_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-estonia-tab" data-toggle="pill" href="#v-pills-estonia" role="tab" aria-controls="v-pills-estonia" aria-selected="true">Estonia</a>
+                      <h5 id="estonia_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-finland-tab" data-toggle="pill" href="#v-pills-finland" role="tab" aria-controls="v-pills-finland" aria-selected="false">Finland</a>
+                      <h5 id="fin_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-france-tab" data-toggle="pill" href="#v-pills-france" role="tab" aria-controls="v-pills-france" aria-selected="false">France</a>
+                      <h5 id="fran_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Germany</a>
+                      <h5 id="ger_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-greece-tab" data-toggle="pill" href="#v-pills-greece" role="tab" aria-controls="v-pills-greece" aria-selected="false">Greece</a>
+                      <h5 id="gree_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-hungary-tab" data-toggle="pill" href="#v-pills-hungary" role="tab" aria-controls="v-pills-hungary" aria-selected="false">Hungary</a>
+                      <h5 id="hun_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">India</a>
+                      <h5 id="ind_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-indonesia-tab" data-toggle="pill" href="#v-pills-indonesia" role="tab" aria-controls="v-pills-indonesia" aria-selected="false">Indonesia</a>
+                      <h5 id="indo_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-ireland-tab" data-toggle="pill" href="#v-pills-ireland" role="tab" aria-controls="v-pills-ireland" aria-selected="false">Ireland</a>
+                      <h5 id="ire_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-italy-tab" data-toggle="pill" href="#v-pills-italy" role="tab" aria-controls="v-pills-italy" aria-selected="false">Italy</a>
+                      <h5 id="ita_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-japan-tab" data-toggle="pill" href="#v-pills-japan" role="tab" aria-controls="v-pills-japan" aria-selected="false">Japan</a>
+                      <h5 id="jap_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-kazahkstan-tab" data-toggle="pill" href="#v-pills-kazahkstan" role="tab" aria-controls="v-pills-kazahkstan" aria-selected="false">Kazahkstan</a>
+                      <h5 id="kaz_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-korea-tab" data-toggle="pill" href="#v-pills-korea" role="tab" aria-controls="v-pills-korea" aria-selected="false">Korea</a>
+                      <h5 id="kor_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-latvia-tab" data-toggle="pill" href="#v-pills-latvia" role="tab" aria-controls="v-pills-latvia" aria-selected="false">Latvia</a>
+                      <h5 id="latvia_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-libya-tab" data-toggle="pill" href="#v-pills-libya" role="tab" aria-controls="v-pills-libya" aria-selected="false">Libya</a>
+                      <h5 id="libya_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-lithuania-tab" data-toggle="pill" href="#v-pills-lithuania" role="tab" aria-controls="v-pills-lithuania" aria-selected="false">Lithuania</a>
+                      <h5 id="lithuania_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-malaysia-tab" data-toggle="pill" href="#v-pills-malaysia" role="tab" aria-controls="v-pills-malaysia" aria-selected="false">Malaysia</a>
+                      <h5 id="mal_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-netherlands-tab" data-toggle="pill" href="#v-pills-netherlands" role="tab" aria-controls="v-pills-netherlands" aria-selected="false">Netherlands</a>
+                      <h5 id="net_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-new_zealand-tab" data-toggle="pill" href="#v-pills-new_zealand" role="tab" aria-controls="v-pills-new_zealand" aria-selected="false">New Zealand</a>
+                      <h5 id="new_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-norway-tab" data-toggle="pill" href="#v-pills-norway" role="tab" aria-controls="v-pills-norway" aria-selected="false">Norway</a>
+                      <h5 id="nor_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-phillipines-tab" data-toggle="pill" href="#v-pills-phillipines" role="tab" aria-controls="v-pills-phillipines" aria-selected="false">Phillipines</a>
+                      <h5 id="phi_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-poland-tab" data-toggle="pill" href="#v-pills-poland" role="tab" aria-controls="v-pills-poland" aria-selected="false">Poland</a>
+                      <h5 id="pol_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-portugal-tab" data-toggle="pill" href="#v-pills-portugal" role="tab" aria-controls="v-pills-portugal" aria-selected="false">Portugal</a>
+                      <h5 id="por_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-russia-tab" data-toggle="pill" href="#v-pills-russia" role="tab" aria-controls="v-pills-russia" aria-selected="false">Russia</a>
+                      <h5 id="rus_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-saudi_arabia-tab" data-toggle="pill" href="#v-pills-saudi_arabia" role="tab" aria-controls="v-pills-saudi_arabia" aria-selected="false">Saudi Arabia</a>
+                      <h5 id="saudi_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-singapore-tab" data-toggle="pill" href="#v-pills-singapore" role="tab" aria-controls="v-pills-singapore" aria-selected="false">Singapore</a>
+                      <h5 id="sing_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-slovakia-tab" data-toggle="pill" href="#v-pills-slovakia" role="tab" aria-controls="v-pills-slovakia" aria-selected="false">Slovakia</a>
+                      <h5 id="slo_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-south_africa-tab" data-toggle="pill" href="#v-pills-south_africa" role="tab" aria-controls="v-pills-south_africa" aria-selected="false">South Africa</a>
+                      <h5 id="sou_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-spain-tab" data-toggle="pill" href="#v-pills-spain" role="tab" aria-controls="v-pills-spain" aria-selected="false">Spain</a>
+                      <h5 id="spa_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-sudan-tab" data-toggle="pill" href="#v-pills-sudan" role="tab" aria-controls="v-pills-sudan" aria-selected="false">Sudan</a>
+                      <h5 id="sudan_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-sweden-tab" data-toggle="pill" href="#v-pills-sweden" role="tab" aria-controls="v-pills-sweden" aria-selected="false">Sweden</a>
+                      <h5 id="swe_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-switzerland-tab" data-toggle="pill" href="#v-pills-switzerland" role="tab" aria-controls="v-pills-switzerland" aria-selected="false">Switzerland</a>
+                      <h5 id="swi_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Turkey</a>
+                      <h5 id="tur_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-dubai-tab" data-toggle="pill" href="#v-pills-dubai" role="tab" aria-controls="v-pills-dubai" aria-selected="true">United Arab Emirates</a>
+                      <h5 id="dubai_num" class="side_number"></h5>
+                  <a class="nav-link" id="v-pills-united_kingdom-tab" data-toggle="pill" href="#v-pills-united_kingdom" role="tab" aria-controls="v-pills-united_kingdom" aria-selected="false">United Kingdom</a></a>
+                      <h5 id="uk_num" class="side_number"></h5>
+                </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+
+        <!-- BUTTON DEACTIVATED -->
+        <!--<div id="page-content-wrapper">
+          <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">More Countries</a>-->
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="v-pills-australia" role="tabpanel" aria-labelledby="v-pills-australia-tab">
+              <h1 class="country">Australia</h1>
+              <section id="australia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="australia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-austria" role="tabpanel" aria-labelledby="v-pills-austria-tab">
+              <h1 class="country">Austria</h1>
+              <section id="austria_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="austria" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-belgium_dutch" role="tabpanel" aria-labelledby="v-pills-belgium_dutch-tab">
+              <h1 class="country">Belgium (Dutch)</h1>
+              <section id="belgium_dutch_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="belgium_dutch" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-belgium_french" role="tabpanel" aria-labelledby="v-pills-belgium_french-tab">
+              <h1 class="country">Belgium (French)</h1>
+              <section id="belgium_french_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="belgium_french" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-china" role="tabpanel" aria-labelledby="v-pills-china-tab">
+              <h1 class="country">China</h1>
+              <section id="china_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="china" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-czech" role="tabpanel" aria-labelledby="v-pills-czech-tab">
+              <h1 class="country">Czech</h1>
+              <section id="czech_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="czech" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade show active" id="v-pills-denmark" role="tabpanel" aria-labelledby="v-pills-denmark-tab">
+              <h1 class="country">Denmark</h1>
+              <section id="denmark_active" class= "tab-pane fade show active active_course" >
+              </section>
+              </section>
+              <section id="denmark" class="gridContainer tab-pane fade show active">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-egypt" role="tabpanel" aria-labelledby="v-pills-egypt-tab">
+              <h1 class="country">Egypt</h1>
+              <section id="egypt_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="egypt" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-estonia" role="tabpanel" aria-labelledby="v-pills-estonia-tab">
+              <h1 class="country">Estonia</h1>
+              <section id="estonia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="estonia" class="gridContainer">
+              </section>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-finland" role="tabpanel" aria-labelledby="v-pills-finland-tab">
+              <h1 class="country">Finland</h1>
+              <section id="finland_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="finland" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-france" role="tabpanel" aria-labelledby="v-pills-france-tab">
+              <h1 class="country">France</h1>
+              <section id="france_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="france" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <h1 class="country">Germany</h1>
+              <section id="germany_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="germany" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-greece" role="tabpanel" aria-labelledby="v-pills-greece-tab">
+              <h1 class="country">Greece</h1>
+              <section id="greece_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="greece" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-hungary" role="tabpanel" aria-labelledby="v-pills-hungary-tab">
+              <h1 class="country">Hungary</h1>
+              <section id="hungary_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="hungary" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <h1 class="country">India</h1>
+              <section id="india_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="india" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-indonesia" role="tabpanel" aria-labelledby="v-pills-indonesia-tab">
+              <h1 class="country">Indonesia</h1>
+              <section id="indonesia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="indonesia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-ireland" role="tabpanel" aria-labelledby="v-pills-ireland-tab">
+              <h1 class="country">Ireland</h1>
+              <section id="ireland_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="ireland" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-italy" role="tabpanel" aria-labelledby="v-pills-italy-tab">
+              <h1 class="country">Italy</h1>
+              <section id="italy_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="italy" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-japan" role="tabpanel" aria-labelledby="v-pills-japan-tab">
+              <h1 class="country">Japan</h1>
+              <section id="japan_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="japan" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-kazahkstan" role="tabpanel" aria-labelledby="v-pills-kazahkstan-tab">
+              <h1 class="country">Kazahkstan</h1>
+              <section id="kazahkstan_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="kazahkstan" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-korea" role="tabpanel" aria-labelledby="v-pills-korea-tab">
+              <h1 class="country">Korea</h1>
+              <section id="korea_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="korea" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-latvia" role="tabpanel" aria-labelledby="v-pills-latvia-tab">
+              <h1 class="country">Latvia</h1>
+              <section id="latvia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="latvia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-libya" role="tabpanel" aria-labelledby="v-pills-libya-tab">
+              <h1 class="country">Libya</h1>
+              <section id="libya_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="libya" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-lithuania" role="tabpanel" aria-labelledby="v-pills-lithuania-tab">
+              <h1 class="country">Lithuania</h1>
+              <section id="lithuania_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="lithuania" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-malaysia" role="tabpanel" aria-labelledby="v-pills-malaysia-tab">
+              <h1 class="country">Malaysia</h1>
+              <section id="malaysia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="malaysia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-netherlands" role="tabpanel" aria-labelledby="v-pills-netherlands-tab">
+              <h1 class="country">Netherlands</h1>
+              <section id="netherlands_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="netherlands" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-new_zealand" role="tabpanel" aria-labelledby="v-pills-new_zealand-tab">
+              <h1 class="country">New Zealand</h1>
+              <section id="new_zealand_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="new_zealand" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-norway" role="tabpanel" aria-labelledby="v-pills-norway-tab">
+              <h1 class="country">Norway</h1>
+              <section id="norway_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="norway" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-phillipines" role="tabpanel" aria-labelledby="v-pills-phillipines-tab">
+              <h1 class="country">Phillipines</h1>
+              <section id="phillipines_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="phillipines" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-poland" role="tabpanel" aria-labelledby="v-pills-poland-tab">
+              <h1 class="country">Poland</h1>
+              <section id="poland_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="poland" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-portugal" role="tabpanel" aria-labelledby="v-pills-portugal-tab">
+              <h1 class="country">Portugal</h1>
+              <section id="portugal_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="portugal" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-russia" role="tabpanel" aria-labelledby="v-pills-russia-tab">
+              <h1 class="country">Russia</h1>
+              <section id="russia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="russia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-saudi_arabia" role="tabpanel" aria-labelledby="v-pills-saudi_arabia-tab">
+              <h1 class="country">Saudi Arabia</h1>
+              <section id="saudi_arabia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="saudi_arabia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-singapore" role="tabpanel" aria-labelledby="v-pills-singapore-tab">
+              <h1 class="country">Singapore</h1>
+              <section id="singapore_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="singapore" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-slovakia" role="tabpanel" aria-labelledby="v-pills-slovakia-tab">
+              <h1 class="country">Slovakia</h1>
+              <section id="slovakia_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="slovakia" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-south_africa" role="tabpanel" aria-labelledby="v-pills-south_africa-tab">
+              <h1 class="country">South Africa</h1>
+              <section id="south_africa_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="south_africa" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-spain" role="tabpanel" aria-labelledby="v-pills-spain-tab">
+              <h1 class="country">Spain</h1>
+              <section id="spain_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="spain" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-sudan" role="tabpanel" aria-labelledby="v-pills-sudan-tab">
+              <h1 class="country">Sudan</h1>
+              <section id="sudan_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="sudan" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-sweden" role="tabpanel" aria-labelledby="v-pills-sweden-tab">
+              <h1 class="country">Sweden</h1>
+              <section id="sweden_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="sweden" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-switzerland" role="tabpanel" aria-labelledby="v-pills-switzerland-tab">
+              <h1 class="country">Switzerland</h1>
+              <section id="switzerland_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="switzerland" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <h1 class="country">Turkey</h1>
+              <section id="turkey_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="turkey" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-dubai" role="tabpanel" aria-labelledby="v-pills-dubai-tab">
+              <h1 class="country">United Arab Emirates</h1>
+              <section id="dubai_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="dubai" class="gridContainer">
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-united_kingdom" role="tabpanel" aria-labelledby="v-pills-united_kingdom-tab">
+              <h1 class="country">United Kingdom</h1>
+              <section id="united_kingdom_active" class= "tab-pane fade show active active_course" >
+              </section>
+              <section id="united_kingdom" class="gridContainer">
+              </section>
+            </div>
+          </div>
+        <!--  <div class="legend">
+            <span id="legend-active">
+              Active
+            </span>
+            <span id="legend-deactive">
+              Deactive
+            </span>
+            <span id="legend-rfi">
+              Ready
+            </span>
+          </div> -->
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/main.js?v=2"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
